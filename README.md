@@ -2,7 +2,7 @@
 
 Aplicativo mobile desenvolvido em **React Native** com foco em **educação ambiental**, trazendo informações sobre o clima, dicas ecológicas e ações sustentáveis para o dia a dia.
 
-Projeto desenvolvido como parte da disciplina de **Mobile Application Development.**.
+Projeto desenvolvido como parte da disciplina de **Mobile Application Development**.
 
 ---
 
