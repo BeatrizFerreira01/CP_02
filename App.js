@@ -7,7 +7,7 @@ import WeatherScreen from './src/screens/WeatherScreen';
 import TipsScreen from './src/screens/TipsScreen';
 import AboutScreen from './src/screens/AboutScreen';
 import NewsScreen from './src/screens/NewsScreen';
-import AjudaScreen from './src/screens/AjudaScreen';
+import AjudaScreen from './src/screens/AjudaScreens';
 
 const Tab = createBottomTabNavigator();
 const Stack = createNativeStackNavigator();

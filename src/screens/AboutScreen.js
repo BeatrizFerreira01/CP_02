@@ -10,11 +10,11 @@ export default function AboutScreen() {
     <View style={styles.container}>
       <Text style={styles.titulo}>Desenvolvedores</Text>
 
-      <Image source={require('/assets/images/devs_avatar.jpg')} style={styles.imagem} />
+      <Image source={require("/assets/images/devs_avatar.jpg")} style={styles.imagem} />
       <Text style={styles.nome}>Beatriz Ferreira Cruz</Text>
       <Text style={styles.nome}>Gabrielly Campos Macedo</Text>
 
-      <Image source={require('/assets/images/nature.jpg')} style={styles.imagem} />
+      <Image source={require("/assets/images/nature.jpg")} style={styles.imagem} />
 
       <TouchableOpacity style={styles.botao} onPress={abrirSite}>
         <Text style={styles.textoBotao}>Visite o Greenpeace 🌱</Text>

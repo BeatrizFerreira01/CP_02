@@ -6,7 +6,7 @@ export default function AjudaScreen() {
     <View style={styles.container}>
       <Text style={styles.title}>Tela de Ajuda</Text>
       <Image
-        source={require('../../assets/images/help_icon.png')}
+        source={require("assets/images/help_icon.png")}
         style={{ width: 100, height: 100, marginVertical: 20 }}
       />
       <Text style={styles.text}>
