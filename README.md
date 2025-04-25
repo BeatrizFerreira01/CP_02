@@ -134,3 +134,16 @@ Essa API é utilizada no formulário da tela de Cadastro para preencher automati
 Essa API é usada na tela de Clima para exibir a temperatura, condição atual e um ícone representativo da cidade escolhida.
 
 ---
+
+## 📝 Observações Finais
+
+Este projeto foi desenvolvido como parte da disciplina de **Mobile Application Development.**, com foco em:
+
+- Uso de **tecnologias modernas** como React Native e Expo.
+- Aplicação de **boas práticas de design de interface** e usabilidade.
+- Integração com **APIs externas reais**, como ViaCEP e OpenWeather.
+- Compreensão de **temas sociais e ambientais**, contribuindo para a formação cidadã e tecnológica.
+
+O código está organizado com componentização, navegação estruturada e responsividade para oferecer uma boa experiência de uso.
+
+---
