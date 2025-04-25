@@ -25,6 +25,10 @@ export default function HomeScreen({ navigation }) {
       <TouchableOpacity style={styles.botao} onPress={() => navigation.navigate('Dicas')}>
         <Text style={styles.textoBotao}>Ver dicas ambientais 🌱</Text>
       </TouchableOpacity>
+
+      <TouchableOpacity style={styles.botao} onPress={() => navigation.navigate('Ajuda')}>
+        <Text style={styles.textoBotao}>Precisa de ajuda? ❓</Text>
+      </TouchableOpacity>
     </ScrollView>
   );
 }
