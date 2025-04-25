@@ -63,7 +63,7 @@ O app utiliza **duas estratégias de navegação**:
 
 ---
 
-## 👨‍💻 Desenvolvedoras
+## 👩‍💻 Desenvolvedoras
 
 - Beatriz Ferreira Cruz
 - Gabrielly Campos Macedo
