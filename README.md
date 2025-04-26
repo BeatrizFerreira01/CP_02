@@ -17,9 +17,9 @@ Projeto desenvolvido como parte da disciplina de **Mobile Application Developmen
 ## 📱 Telas
 
 - **Home:** Apresentação do projeto e links para as funções principais  
-- **Clima:** Consulta de clima com integração a uma API externa  
+- **Clima:** Consulta de clima com integração a uma API externa
+- **News:** Noticias sobre mudanças climaticas
 - **Dicas:** Sugestões sustentáveis para aplicar no cotidiano  
-- **Cadastro:** Formulário com CEP para localização via API  
 - **Sobre:** Informações sobre os desenvolvedores  
 - **Ajuda:** Tela extra fora das abas, acessível via Stack Navigation
 
@@ -46,7 +46,7 @@ O app utiliza **duas estratégias de navegação**:
 
 - ✅ Múltiplas telas com imagens e conteúdos informativos  
 - ✅ Navegação combinada: Stack + Tabs  
-- ✅ Formulário com campo de CEP e integração à API [ViaCEP](https://viacep.com.br/)  
+- ✅ Formulário com campo e integração à API OpenWeather
 - ✅ Componente `Linking` para abrir links externos  
 - ✅ Componentização e organização de código
 
@@ -57,8 +57,7 @@ O app utiliza **duas estratégias de navegação**:
 - React Native com Expo
 - React Navigation (`@react-navigation/native`, `@react-navigation/bottom-tabs`, `@react-navigation/native-stack`)
 - Ionicons (ícones)
-- API pública ViaCEP para busca de endereço
-- API de clima (ex: OpenWeather, ClimaTempo)
+- API de clima OpenWeather
 - Componente `Linking` para abrir URLs
 
 ---
@@ -77,7 +76,9 @@ O app utiliza **duas estratégias de navegação**:
  ┣ 📁 screens       → Telas principais do app
  ┣ 📁 components    → Componentes reutilizáveis
  ┣ 📁 navigation    → Configurações de navegação
+ ┣ 📁 service       → Configuração da API
  ┗ 📁 assets/images → Imagens utilizadas nas telas
+
 ```
 
 ---
@@ -93,24 +94,7 @@ npm start
 
 ---
 
-## 🌐 Exemplos de Integração com APIs
-
-### 🔍 Buscar Endereço por CEP (ViaCEP)
-**URL:** `https://viacep.com.br/ws/01001000/json/`  
-**Retorno esperado:**
-```json
-{
-  "cep": "01001-000",
-  "logradouro": "Praça da Sé",
-  "bairro": "Sé",
-  "localidade": "São Paulo",
-  "uf": "SP"
-}
-```
-
-Essa API é utilizada no formulário da tela de Cadastro para preencher automaticamente os dados da cidade e estado com base no CEP informado.
-
----
+## 🌐 Exemplos de Integração com API
 
 ### 🌤️ Buscar Clima Atual (OpenWeather)
 **URL (exemplo):** `https://api.openweathermap.org/data/2.5/weather?q=São Paulo&appid=SUA_CHAVE&units=metric&lang=pt_br`  
@@ -141,7 +125,7 @@ Este projeto foi desenvolvido como parte da disciplina de **Mobile Application D
 
 - Uso de **tecnologias modernas** como React Native e Expo.
 - Aplicação de **boas práticas de design de interface** e usabilidade.
-- Integração com **APIs externas reais**, como ViaCEP e OpenWeather.
+- Integração com **APIs externas reais**, como a OpenWeather.
 - Compreensão de **temas sociais e ambientais**, contribuindo para a formação cidadã e tecnológica.
 
 O código está organizado com componentização, navegação estruturada e responsividade para oferecer uma boa experiência de uso.
