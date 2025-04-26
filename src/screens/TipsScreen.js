@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, StyleSheet, ScrollView, Image } from 'react-native';
+import { View, Text, StyleSheet, ScrollView, TouchableOpacity, Linking } from 'react-native';
 import TipCard from '../components/TipCard';
 
 export default function TipsScreen() {
@@ -22,15 +22,23 @@ export default function TipsScreen() {
     },
   ];
 
+  const abrirSite = () => {
+    Linking.openURL('https://www.greenpeace.org/brasil/');
+  };
+
   return (
     <ScrollView contentContainerStyle={styles.container}>
       <Text style={styles.titulo}>Dicas Ambientais 🌱</Text>
 
-
-
       {dicas.map((dica, index) => (
         <TipCard key={index} titulo={dica.titulo} descricao={dica.descricao} />
       ))}
+
+      <View style={styles.botaoContainer}>
+        <TouchableOpacity style={styles.botao} onPress={abrirSite}>
+          <Text style={styles.textoBotao}>Visite o Greenpeace 🌱</Text>
+        </TouchableOpacity>
+      </View>
     </ScrollView>
   );
 }
@@ -47,10 +55,20 @@ const styles = StyleSheet.create({
     marginBottom: 20,
     textAlign: 'center',
   },
-  imagem: {
-    width: '100%',
-    height: 150,
+  botaoContainer: {
+    alignItems: 'center',
+    marginTop: 30,
+    marginBottom: 20,
+  },
+  botao: {
+    backgroundColor: '#166534',
+    paddingVertical: 12,
+    paddingHorizontal: 20,
     borderRadius: 10,
-    marginBottom: 15,
+  },
+  textoBotao: {
+    color: '#fff',
+    fontWeight: 'bold',
+    textAlign: 'center',
   },
 });

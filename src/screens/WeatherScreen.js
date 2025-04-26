@@ -13,7 +13,7 @@ export default function WeatherScreen() {
     }
 
     try {
-      const apiKey = 'a39bf42f530592e8ea221692d4f03f5f'; // Substitua pela sua chave da OpenWeather
+      const apiKey = 'a39bf42f530592e8ea221692d4f03f5f';
       const url = `https://api.openweathermap.org/data/2.5/weather?q=${cidade}&appid=${apiKey}&lang=pt_br&units=metric`;
 
       const response = await axios.get(url);
@@ -37,7 +37,7 @@ export default function WeatherScreen() {
       />
 
       <TouchableOpacity style={styles.botao} onPress={buscarClima}>
-        <Text style={styles.textoBotao}>Buscar ☀️</Text>
+        <Text style={styles.textoBotao}>Buscar </Text>
       </TouchableOpacity>
 
 

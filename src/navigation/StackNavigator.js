@@ -14,7 +14,6 @@ const StackNavigator = () => {
       <Stack.Navigator initialRouteName="HomeTabs" screenOptions={{ headerShown: false }}>
         <Stack.Screen name="HomeTabs" component={TabNavigator} />
         <Stack.Screen name="Weather" component={WeatherScreen} />
-        <Stack.Screen name="CityForm" component={CityFormScreen} />
       </Stack.Navigator>
     </NavigationContainer>
   );

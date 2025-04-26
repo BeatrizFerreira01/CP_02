@@ -5,7 +5,14 @@ import { Image } from 'expo-image';
 export default function HomeScreen({ navigation }) {
   return (
     <ScrollView contentContainerStyle={styles.container}>
-      <Text style={styles.titulo}>O planeta precisa de você 🌍🔥</Text>
+
+    <Image
+      source={{ uri: 'https://static.vecteezy.com/ti/vetor-gratis/p1/17260371-mao-apontando-o-dedo-para-voce-vetor.jpg' }}
+      style={{ width: 380, height: 300 }}
+      contentFit="cover"
+    />
+      
+      <Text style={styles.titulo}>O planeta precisa de você 🌍</Text>
 
     
       <Text style={styles.texto}>
@@ -19,15 +26,15 @@ export default function HomeScreen({ navigation }) {
       </Text>
 
       <TouchableOpacity style={styles.botao} onPress={() => navigation.navigate('Clima')}>
-        <Text style={styles.textoBotao}>Ver clima agora ☁️</Text>
+        <Text style={styles.textoBotao}>Ver clima agora </Text>
       </TouchableOpacity>
 
       <TouchableOpacity style={styles.botao} onPress={() => navigation.navigate('Dicas')}>
-        <Text style={styles.textoBotao}>Ver dicas ambientais 🌱</Text>
+        <Text style={styles.textoBotao}>Ver dicas ambientais </Text>
       </TouchableOpacity>
 
       <TouchableOpacity style={styles.botao} onPress={() => navigation.navigate('Ajuda')}>
-        <Text style={styles.textoBotao}>Precisa de ajuda? ❓</Text>
+        <Text style={styles.textoBotao}>Precisa de ajuda? </Text>
       </TouchableOpacity>
     </ScrollView>
   );
@@ -36,7 +43,7 @@ export default function HomeScreen({ navigation }) {
 const styles = StyleSheet.create({
   container: {
     padding: 20,
-    backgroundColor: '#f0fdf4',
+    backgroundColor: '#ffffff',
   },
   titulo: {
     fontSize: 26,
