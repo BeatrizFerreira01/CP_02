@@ -28,7 +28,6 @@ export default function WeatherScreen() {
     <View style={styles.container}>
       <Text style={styles.titulo}>Consultar Clima</Text>
 
-      <Image source={require("/assets/images/ceu_limpo.png")} style={styles.imagem} />
 
       <TextInput
         style={styles.input}
@@ -41,7 +40,7 @@ export default function WeatherScreen() {
         <Text style={styles.textoBotao}>Buscar ☀️</Text>
       </TouchableOpacity>
 
-      <Image source={require('/assets/images/tempestade.png')} style={styles.imagem} />
+
 
       {clima && (
         <View style={styles.resultado}>

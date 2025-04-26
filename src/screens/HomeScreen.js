@@ -7,13 +7,12 @@ export default function HomeScreen({ navigation }) {
     <ScrollView contentContainerStyle={styles.container}>
       <Text style={styles.titulo}>O planeta precisa de você 🌍🔥</Text>
 
-      <Image source={require("/assets/images/earth_melting.png")} style={styles.imagem} />
+    
       <Text style={styles.texto}>
         Mudanças climáticas são uma realidade. Temperaturas extremas, secas, enchentes e desastres
         naturais estão cada vez mais frequentes.
       </Text>
 
-      <Image source={require("/assets/images/forest.png")} style={styles.imagem} />
       <Text style={styles.texto}>
         Faça parte da solução. Nosso aplicativo ajuda você a acompanhar o clima da sua cidade,
         adotar atitudes sustentáveis e ficar por dentro das ações ambientais.

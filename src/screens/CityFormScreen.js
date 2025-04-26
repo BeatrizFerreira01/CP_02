@@ -20,7 +20,7 @@ export default function CityFormScreen() {
     <View style={styles.container}>
       <Text style={styles.titulo}>Cadastro de Cidade 🌍</Text>
 
-      <Image source={require('/assets/images/mapa.jpg')} style={styles.imagem} />
+
 
       <TextInput
         style={styles.input}
@@ -39,7 +39,7 @@ export default function CityFormScreen() {
         <Text style={styles.textoBotao}>Salvar</Text>
       </TouchableOpacity>
 
-      <Image source={require('/assets/images/location.jpg')} style={styles.imagem} />
+
     </View>
   );
 }

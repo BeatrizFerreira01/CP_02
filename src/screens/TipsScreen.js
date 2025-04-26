@@ -26,8 +26,7 @@ export default function TipsScreen() {
     <ScrollView contentContainerStyle={styles.container}>
       <Text style={styles.titulo}>Dicas Ambientais 🌱</Text>
 
-      <Image source={require("/assets/images/bike.png")} style={styles.imagem} />
-      <Image source={require("/assets/images/planting.png")} style={styles.imagem} />
+
 
       {dicas.map((dica, index) => (
         <TipCard key={index} titulo={dica.titulo} descricao={dica.descricao} />
