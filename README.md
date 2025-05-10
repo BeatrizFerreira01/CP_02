@@ -8,8 +8,8 @@ Projeto desenvolvido como parte da disciplina de **Mobile Application Developmen
 
 ## 🎯 Objetivos
 
-- Promover a conscientização sobre mudanças climáticas 🌍
-- Ajudar o usuário a adotar atitudes sustentáveis no dia a dia 💧♻️
+- Promover a conscientização sobre mudanças climáticas 🌍  
+- Ajudar o usuário a adotar atitudes sustentáveis no dia a dia 💧♻️  
 - Integrar tecnologias mobile para impactar positivamente a sociedade
 
 ---
@@ -17,11 +17,11 @@ Projeto desenvolvido como parte da disciplina de **Mobile Application Developmen
 ## 📱 Telas
 
 - **Home:** Apresentação do projeto e links para as funções principais  
-- **Clima:** Consulta de clima com integração a uma API externa
-- **News:** Noticias sobre mudanças climaticas
+- **Clima:** Consulta de clima com integração a uma API externa  
+- **News:** Notícias sobre mudanças climáticas  
 - **Dicas:** Sugestões sustentáveis para aplicar no cotidiano  
 - **Sobre:** Informações sobre os desenvolvedores  
-- **Ajuda:** Tela extra fora das abas, acessível via Stack Navigation
+- **Ajuda:** Tela extra fora das abas, acessível via Stack Navigation  
 
 ---
 
@@ -34,37 +34,43 @@ O app utiliza **duas estratégias de navegação**:
 
 ---
 
-## 🖼️ Design
-
-- Interface agradável e responsiva  
-- No mínimo **duas imagens por tela**, contextualizadas ao conteúdo  
-- Cores suaves (#f0fdf4, #166534, etc) e fontes acessíveis
-
----
-
 ## 🧩 Funcionalidades
 
 - ✅ Múltiplas telas com imagens e conteúdos informativos  
 - ✅ Navegação combinada: Stack + Tabs  
-- ✅ Formulário com campo e integração à API OpenWeather
+- ✅ Formulário com campo e integração à API OpenWeather  
 - ✅ Componente `Linking` para abrir links externos  
-- ✅ Componentização e organização de código
+- ✅ Componentização e organização de código  
+- ✅ **Customização da tela Splash** com imagem personalizada  
+- ✅ **Ícone customizado** para o app no Android e Web  
+- ✅ **Geração do APK com EAS Build**
+
+---
+
+## 🖼️ Design
+
+- Interface agradável, acessível e coerente com o tema  
+- Cores escolhidas com base em tons ecológicos e fundo escuro `#000000`  
+- No mínimo **duas imagens por tela**, contextualizadas ao conteúdo  
+- Splash screen personalizada com imagem realista e limpa  
+- Ícone exclusivo representando o planeta Terra 🌎
 
 ---
 
 ## 🔗 Tecnologias Utilizadas
 
-- React Native com Expo
-- React Navigation (`@react-navigation/native`, `@react-navigation/bottom-tabs`, `@react-navigation/native-stack`)
-- Ionicons (ícones)
-- API de clima OpenWeather
-- Componente `Linking` para abrir URLs
+- React Native com Expo  
+- React Navigation  
+- Expo EAS Build  
+- API OpenWeather  
+- `Linking` para navegação web  
+- Ícones com `@expo/vector-icons`
 
 ---
 
 ## 👩‍💻 Desenvolvedoras
 
-- Beatriz Ferreira Cruz
+- Beatriz Ferreira Cruz  
 - Gabrielly Campos Macedo
 
 ---
@@ -76,9 +82,8 @@ O app utiliza **duas estratégias de navegação**:
  ┣ 📁 screens       → Telas principais do app
  ┣ 📁 components    → Componentes reutilizáveis
  ┣ 📁 navigation    → Configurações de navegação
- ┣ 📁 service       → Configuração da API
- ┗ 📁 assets/images → Imagens utilizadas nas telas
-
+ ┣ 📁 services      → Conexão com API externa
+ ┗ 📁 assets        → Ícones, splash e imagens utilizadas
 ```
 
 ---
@@ -90,44 +95,50 @@ npm install
 npm start
 ```
 
-É necessário ter o **Expo CLI** instalado e o app **Expo Go** no celular para testar.
+- Requer **Expo Go** no celular  
+- Para gerar o `.apk`:  
+```bash
+eas build -p android --profile preview
+```
 
 ---
 
-## 🌐 Exemplos de Integração com API
+## 🌐 Exemplo de API - OpenWeather
 
-### 🌤️ Buscar Clima Atual (OpenWeather)
-**URL (exemplo):** `https://api.openweathermap.org/data/2.5/weather?q=São Paulo&appid=SUA_CHAVE&units=metric&lang=pt_br`  
-**Retorno esperado (parcial):**
+```http
+https://api.openweathermap.org/data/2.5/weather?q=São Paulo&appid=SUA_CHAVE&units=metric&lang=pt_br
+```
+
+**Retorno esperado:**
 ```json
 {
   "weather": [
-    {
-      "description": "céu limpo",
-      "icon": "01d"
-    }
+    { "description": "céu limpo", "icon": "01d" }
   ],
-  "main": {
-    "temp": 28.4,
-    "humidity": 65
-  },
+  "main": { "temp": 28.4, "humidity": 65 },
   "name": "São Paulo"
 }
 ```
 
-Essa API é usada na tela de Clima para exibir a temperatura, condição atual e um ícone representativo da cidade escolhida.
+---
+
+## ✅ Requisitos Atendidos
+
+- [x] 5+ telas funcionais  
+- [x] Interface agradável  
+- [x] Duas estratégias de navegação  
+- [x] Duas imagens por tela  
+- [x] 1 formulário com API externa  
+- [x] Linking externo  
+- [x] Código organizado com componentização  
+- [x] Splash personalizada  
+- [x] Ícone personalizado  
+- [x] Geração de `.apk` (com EAS)
 
 ---
 
-## 📝 Observações Finais
+## 📝 Considerações Finais
 
-Este projeto foi desenvolvido como parte da disciplina de **Mobile Application Development.**, com foco em:
-
-- Uso de **tecnologias modernas** como React Native e Expo.
-- Aplicação de **boas práticas de design de interface** e usabilidade.
-- Integração com **APIs externas reais**, como a OpenWeather.
-- Compreensão de **temas sociais e ambientais**, contribuindo para a formação cidadã e tecnológica.
-
-O código está organizado com componentização, navegação estruturada e responsividade para oferecer uma boa experiência de uso.
+Este app aborda uma **questão social urgente: o meio ambiente**. Desenvolvido com tecnologias modernas, ele une **educação, design e integração real com APIs**, entregando uma solução mobile com propósito e valor.
 
 ---
