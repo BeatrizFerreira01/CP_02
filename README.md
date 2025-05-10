@@ -1,120 +1,68 @@
-# 🌱 EcoClima - Conscientização Ambiental
+# 🌱 Projeto - EcoClima
 
-Aplicativo mobile desenvolvido em **React Native** com foco em **educação ambiental**, trazendo informações sobre o clima, dicas ecológicas e ações sustentáveis para o dia a dia.
-
-Projeto desenvolvido como parte da disciplina de **Mobile Application Development**.
+**Aplicativo de Conscientização Ambiental com Clima Atual, Dicas Sustentáveis e Informações Climáticas.**  
+Projeto desenvolvido para a disciplina de **Mobile Application Development**.
 
 ---
 
-## 🎯 Objetivos
+## 🚀 Tecnologias Usadas
+- JavaScript (React Native)
+- Expo (geração de APK)
+- React Navigation (Stack + Tabs)
+- OpenWeatherMap API (dados climáticos)
+- Linking API (abertura de links externos)
 
-- Promover a conscientização sobre mudanças climáticas 🌍  
-- Ajudar o usuário a adotar atitudes sustentáveis no dia a dia 💧♻️  
-- Integrar tecnologias mobile para impactar positivamente a sociedade
+---
+
+## 🛠️ Como Rodar o Projeto
+
+### 1. Pré-requisitos
+- Node.js e npm instalados
+- Expo CLI (`npm install -g expo-cli`)
+- Emulador Android ou app Expo Go
+
+### 2. Clonar o repositório
+```bash
+git clone https://github.com/BeatrizFerreira01/CP_02.git
+```
+
+### 3. Instalar as dependências
+```bash
+npm install
+```
+
+### 4. Executar o projeto
+```bash
+npm start
+```
+Use o app **Expo Go** no celular ou Android Studio para rodar.
 
 ---
 
 ## 📱 Telas
 
-- **Home:** Apresentação do projeto e links para as funções principais  
-- **Clima:** Consulta de clima com integração a uma API externa  
-- **News:** Notícias sobre mudanças climáticas  
-- **Dicas:** Sugestões sustentáveis para aplicar no cotidiano  
-- **Sobre:** Informações sobre os desenvolvedores  
-- **Ajuda:** Tela extra fora das abas, acessível via Stack Navigation  
+| Tela         | Descrição |
+|--------------|-----------|
+| Home         | Mensagem de boas-vindas e alerta climático |
+| Clima        | Consulta de temperatura e umidade via API |
+| News         | Lista de notícias sobre o clima |
+| Dicas        | Sugestões sustentáveis em cards |
+| Sobre        | Informações das desenvolvedoras |
+| Ajuda        | Tela acessada via Stack Navigation |
 
 ---
 
-## 🧭 Navegação
+## 🔌 Integração com API
 
-O app utiliza **duas estratégias de navegação**:
-
-- **Tab Navigation:** Para acessar as principais funcionalidades do app  
-- **Stack Navigation:** Para acessar telas específicas como a de Ajuda
-
----
-
-## 🧩 Funcionalidades
-
-- ✅ Múltiplas telas com imagens e conteúdos informativos  
-- ✅ Navegação combinada: Stack + Tabs  
-- ✅ Formulário com campo e integração à API OpenWeather  
-- ✅ Componente `Linking` para abrir links externos  
-- ✅ Componentização e organização de código  
-- ✅ **Customização da tela Splash** com imagem personalizada  
-- ✅ **Ícone customizado** para o app no Android e Web  
-- ✅ **Geração do APK com EAS Build**
-
----
-
-## 🖼️ Design
-
-- Interface agradável, acessível e coerente com o tema  
-- Cores escolhidas com base em tons ecológicos e fundo escuro `#000000`  
-- No mínimo **duas imagens por tela**, contextualizadas ao conteúdo  
-- Splash screen personalizada com imagem realista e limpa  
-- Ícone exclusivo representando o planeta Terra 🌎
-
----
-
-## 🔗 Tecnologias Utilizadas
-
-- React Native com Expo  
-- React Navigation  
-- Expo EAS Build  
-- API OpenWeather  
-- `Linking` para navegação web  
-- Ícones com `@expo/vector-icons`
-
----
-
-## 👩‍💻 Desenvolvedoras
-
-- Beatriz Ferreira Cruz  
-- Gabrielly Campos Macedo
-
----
-
-## 🗂️ Organização do Projeto
-
-```
-📁 src
- ┣ 📁 screens       → Telas principais do app
- ┣ 📁 components    → Componentes reutilizáveis
- ┣ 📁 navigation    → Configurações de navegação
- ┣ 📁 services      → Conexão com API externa
- ┗ 📁 assets        → Ícones, splash e imagens utilizadas
-```
-
----
-
-## 🚀 Como Executar
-
-```bash
-npm install
-npm start
-```
-
-- Requer **Expo Go** no celular  
-- Para gerar o `.apk`:  
-```bash
-eas build -p android --profile preview
-```
-
----
-
-## 🌐 Exemplo de API - OpenWeather
-
-```http
+### Exemplo de chamada:
+```url
 https://api.openweathermap.org/data/2.5/weather?q=São Paulo&appid=SUA_CHAVE&units=metric&lang=pt_br
 ```
 
-**Retorno esperado:**
+### Exemplo de retorno:
 ```json
 {
-  "weather": [
-    { "description": "céu limpo", "icon": "01d" }
-  ],
+  "weather": [{ "description": "céu limpo" }],
   "main": { "temp": 28.4, "humidity": 65 },
   "name": "São Paulo"
 }
@@ -122,23 +70,51 @@ https://api.openweathermap.org/data/2.5/weather?q=São Paulo&appid=SUA_CHAVE&uni
 
 ---
 
-## ✅ Requisitos Atendidos
+## 🎨 Design
 
-- [x] 5+ telas funcionais  
-- [x] Interface agradável  
-- [x] Duas estratégias de navegação  
-- [x] Duas imagens por tela  
-- [x] 1 formulário com API externa  
-- [x] Linking externo  
-- [x] Código organizado com componentização  
-- [x] Splash personalizada  
-- [x] Ícone personalizado  
-- [x] Geração de `.apk` (com EAS)
+- Splash Screen personalizada ✅
+- Ícone de aplicativo customizado ✅
+- Cores coerentes com o tema ambiental
+- Tipografia simples e interface acessível
 
 ---
 
-## 📝 Considerações Finais
+## 🧠 Funcionalidades Atendidas
 
-Este app aborda uma **questão social urgente: o meio ambiente**. Desenvolvido com tecnologias modernas, ele une **educação, design e integração real com APIs**, entregando uma solução mobile com propósito e valor.
+- 5+ telas implementadas com navegação
+- Navegação Tab + Stack
+- Imagens contextualizadas por tela
+- Formulário para consultar clima por cidade
+- Componentização: TipCard, WeatherCard
+- Linking: acesso ao site do Greenpeace
+- Geração de APK (`eas build -p android`)
 
 ---
+
+## 🗃️ Estrutura do Projeto
+
+```bash
+📁 src
+ ┣ 📁 components       → TipCard, WeatherCard
+ ┣ 📁 navigation       → StackNavigator, TabNavigator
+ ┣ 📁 screens          → HomeScreen, WeatherScreen, NewsScreen, TipsScreen, AboutScreen, AjudaScreen
+ ┗ 📁 services         → weatherApi.js
+📁 assets
+ ┣ 📄 iconn.jpg         → Ícone do app
+ ┣ 📄 splash.webp       → Imagem da splash screen
+ ┗ 📄 demais imagens   → Usadas nas telas
+```
+
+---
+
+## 👩‍💻 Desenvolvedoras
+- Beatriz Ferreira Cruz
+- Gabrielly Campos Macedo
+
+---
+
+## 📝 Observações
+
+Este projeto tem como foco a conscientização ambiental, utilizando tecnologias modernas e seguindo boas práticas de desenvolvimento mobile.
+
+Ele atende **todos os critérios solicitados pela disciplina**, incluindo o **desafio da integração com API**, além da **customização visual completa com ícone e splash**, e **publicação em APK**.
