@@ -23,7 +23,7 @@ Projeto desenvolvido para a disciplina de **Mobile Application Development**.
 
 ### 2. Clonar o repositório
 ```bash
-git clone https://github.com/BeatrizFerreira01/CP_02.git
+git clone https://github.com/BeatrizFerreira01/EcoClima.git
 ```
 
 ### 3. Instalar as dependências
