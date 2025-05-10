@@ -100,8 +100,8 @@ https://api.openweathermap.org/data/2.5/weather?q=São Paulo&appid=SUA_CHAVE&uni
  ┣ 📁 screens          → HomeScreen, WeatherScreen, NewsScreen, TipsScreen, AboutScreen, AjudaScreen
  ┗ 📁 services         → weatherApi.js
 📁 assets
- ┣ 📄 iconn.jpg         → Ícone do app
- ┣ 📄 splash.webp       → Imagem da splash screen
+ ┣ 📄 iconn.jpg        → Ícone do app
+ ┣ 📄 splash.webp      → Imagem da splash screen
  ┗ 📄 demais imagens   → Usadas nas telas
 ```
 
