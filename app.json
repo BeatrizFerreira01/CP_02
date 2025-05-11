@@ -4,11 +4,11 @@
     "slug": "aq-global",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/iconn.jpg",
+    "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
     "newArchEnabled": true,
     "splash": {
-      "image": "./assets/splash.webp",
+      "image": "./assets/splash.png",
       "resizeMode": "cover",
       "backgroundColor": "#000000"
     },
@@ -27,7 +27,7 @@
     },
     "extra": {
       "eas": {
-        "projectId": "6c8806a8-4a19-4406-aa24-c2e6b72d13e8"
+        "projectId": "c3e387a8-e46c-4c07-92ce-51e813d5d062"
       }
     }
   }
