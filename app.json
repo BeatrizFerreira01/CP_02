@@ -17,7 +17,7 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
+        "foregroundImage": "./assets/iconn.png",
         "backgroundColor": "#ffffff"
       },
       "package": "com.beatrizferreira01.aqglobal"
@@ -27,7 +27,7 @@
     },
     "extra": {
       "eas": {
-        "projectId": "c3e387a8-e46c-4c07-92ce-51e813d5d062"
+        "projectId": "6c8806a8-4a19-4406-aa24-c2e6b72d13e8"
       }
     }
   }
