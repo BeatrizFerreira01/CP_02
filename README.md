@@ -19,6 +19,7 @@ Projeto desenvolvido para a disciplina de **Mobile Application Development**.
 ### 1. Pré-requisitos
 - Node.js e npm instalados
 - Expo CLI (`npm install -g expo-cli`)
+- EAS CLI (`npm install -g eas-cli`)
 - Emulador Android ou app Expo Go
 
 ### 2. Clonar o repositório
@@ -31,12 +32,20 @@ git clone https://github.com/BeatrizFerreira01/EcoClima.git
 npm install
 ```
 
-### 4. Executar o projeto
+### 4. Executar o projeto em desenvolvimento
 ```bash
-npm start
+npx expo start
 ```
-
 Abra com o app **Expo Go** ou utilize um emulador Android.
+
+### 5. Gerar o APK com EAS Build
+```bash
+eas build -p android --profile preview --clear-cache
+```
+> Após a build, acesse o link gerado no terminal para fazer o download do `.apk`.
+
+Exemplo de link de build:  
+`https://expo.dev/accounts/beatrizferreira01/projects/aq-global/builds/ceee2302-7862-4bcd-8d17-19b95dffa0c2`
 
 ---
 
@@ -95,15 +104,15 @@ https://api.openweathermap.org/data/2.5/weather?q=São Paulo&appid=SUA_CHAVE&uni
 ## 🗃️ Estrutura do Projeto
 
 ```bash
+📁 assets
+ ┣ 📄 iconn.png        → Ícone do app
+ ┣ 📄 splash.png       → Imagem da splash screen
+ ┗ 📄 demais imagens   → Usadas nas telas
 📁 src
  ┣ 📁 components       → TipCard, WeatherCard
  ┣ 📁 navigation       → StackNavigator, TabNavigator
  ┣ 📁 screens          → HomeScreen, WeatherScreen, NewsScreen, TipsScreen, AboutScreen, AjudaScreen
  ┗ 📁 services         → weatherApi.js
-📁 assets
- ┣ 📄 iconn.jpg        → Ícone do app
- ┣ 📄 splash.webp      → Imagem da splash screen
- ┗ 📄 demais imagens   → Usadas nas telas
 ```
 
 ---
